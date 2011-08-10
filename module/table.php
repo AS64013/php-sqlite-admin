@@ -1,7 +1,7 @@
 <?php
 
 /**
-*¨[type] file
+*[type] file
 * [name] table.php
 * [package] psa
 * [since] 2010.09.22 -ok
