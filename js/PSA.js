@@ -28,6 +28,7 @@ var PSA = {
 	
 	/* table_add get field content and add it */
 	addField: function() {
+        var tblname = PSA.getId('tblname').value;
 		var colname = PSA.getId('colname').value;
 		var coltypesel = PSA.getId('coltype');
 		var coltypepos = coltypesel.selectedIndex;
@@ -53,7 +54,8 @@ var PSA = {
 		checktxt = checktxt + 'coldefault : '+ coldefault + "\r\n";
 		alert(checktxt);
 		
-		var fields = 'colname=' + colname;
+		var fields = 'tblname=' + tblname;
+        fields =  fields + '&colname=' + colname;
 		fields = fields + '&coltype=' + coltype;
 		fields = fields + '&colprime=' + colprime;
 		fields = fields + '&colsize=' + colsize;
